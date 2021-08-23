@@ -1,17 +1,20 @@
 import { Fragment } from 'react'
 import classes from './Header.module.css'
+import mealsImage from '../../assets/meals.jpg' 
+import HeaderCartButton from './HeaderCartButton';
 
 const Header = props => {
     return (
-      <Reqact.Fragmant>
+      <Fragment>
         <header className={classes.header}>
           <h1>ReactMeals</h1>
-          <button>Card</button>
+          <HeaderCartButton />
         </header>
-        <div>
-            <img></img>
+        <div className={classes['main-image']}>
+          <img src={mealsImage} alt='A table full of delicious food'></img>
+          <label> test </label>
         </div>
-      </Reqact.Fragmant>
+      </Fragment>
     );
 }
 
