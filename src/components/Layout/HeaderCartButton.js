@@ -4,7 +4,7 @@ import CartIcon from "../Cart/CartIcon";
 import CartContext from '../../store/cart-context';
 
 const HeaderCartButton = (props) => {
-  const [btnIsHighLightecd, setBtnIsHighLighted]=useState(false)
+  const [btnIsHighLightecd, setBtnIsHighLighted] = useState(false)
   const cartCtx = useContext(CartContext);
   //destructuring items represent cartCtx.items
   const { items } = cartCtx
