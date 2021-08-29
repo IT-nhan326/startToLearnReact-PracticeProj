@@ -3,14 +3,15 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   z-index: 20;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
 .modal {
+  font-size:medium;
   position: fixed;
-  top: 20vh;
+  top: 10vh;
   left: 5%;
   width: 90%;
   background-color: white;
@@ -21,7 +22,7 @@
   animation: slide-down 300ms ease-out forwards;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .modal {
     width: 40rem;
     left: calc(50% - 20rem);
